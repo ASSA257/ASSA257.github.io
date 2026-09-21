@@ -5,116 +5,341 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Assa Nsabiyeze | Academic Website — Agricultural Engineering, Precision Livestock Farming, AI and Sustainable Agriculture.">
 <meta property="og:title" content="Assa Nsabiyeze | Academic Website">
-<meta property="og:description" content="Research, publications, teaching, academic services and CV of Assa Nsabiyeze.">
+<meta property="og:description" content="Research, publications, projects, teaching, academic services and CV of Assa Nsabiyeze.">
 <title>Assa Nsabiyeze | Academic Website</title>
 <style>
-:root{--ink:#213126;--muted:#657167;--green:#2f6d47;--green2:#6f8f53;--line:#dfe7dd;--soft:#f6f8f3;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fcfdf9;color:var(--ink);font:17px/1.75 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{
+  --ink:#203127;--muted:#667268;--green:#285d3b;--green2:#6f8f53;
+  --line:#dce5d9;--soft:#f5f8f2;--card:#fff;--max:1210px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fbfcf8;color:var(--ink);font:17px/1.72 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
-header{position:sticky;top:0;z-index:20;background:rgba(252,253,249,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
-nav{max-width:var(--max);margin:auto;min-height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-family:Georgia,serif;font-size:31px;font-weight:700;color:#274d36}.links{display:flex;gap:20px;flex-wrap:wrap}.links a{font-size:15px;font-weight:650;color:#485a4e}
-main{max-width:var(--max);margin:auto;padding:44px 28px 80px;display:grid;grid-template-columns:290px 1fr;gap:62px}
-aside{position:sticky;top:108px;align-self:start;background:linear-gradient(#f4f7ef,#fafbf7);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 28px rgba(37,60,43,.08)}
-.avatar{width:195px;height:195px;border-radius:18px;object-fit:cover;display:block;margin-bottom:20px}
-aside h1{font:700 31px/1.2 Georgia,serif;color:#274d36;margin:0 0 8px}.role{color:var(--muted);margin:6px 0 18px}
-.meta{list-style:none;padding:0;margin:0}.meta li{padding:9px 0;border-top:1px solid #e4ebe1}.meta li:first-child{border-top:0}.label{display:block;text-transform:uppercase;letter-spacing:.05em;font-size:12px;font-weight:700;color:var(--muted)}
-section{margin-bottom:50px;scroll-margin-top:96px}.hero{background:white;border:1px solid var(--line);border-radius:22px;padding:28px 30px;box-shadow:0 10px 28px rgba(37,60,43,.07)}
-h2{font:700 31px/1.25 Georgia,serif;color:#274d36;border-bottom:2px solid #d7e1d4;padding-bottom:9px;margin:0 0 18px}h3{color:#274d36;margin:26px 0 10px}
-.entry{background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:0 0 16px}.entryhead{display:flex;justify-content:space-between;gap:16px}.entryhead span{white-space:nowrap;color:var(--muted);font-size:14px}.sub{color:var(--muted);margin-top:3px}
-.news,.services{list-style:none;padding:0}.news li,.services li{background:white;border:1px solid var(--line);border-left:4px solid var(--green2);border-radius:12px;padding:12px 14px;margin:10px 0}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.card strong{color:#274d36}.pub li{margin-bottom:13px}
-.cvbutton{display:inline-block;background:#2f6d47;color:white!important;padding:9px 14px;border-radius:9px;font-weight:700;margin-top:5px}.cvbutton:hover{text-decoration:none;background:#245839}
+header{position:sticky;top:0;z-index:30;background:rgba(251,252,248,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+nav{max-width:var(--max);margin:auto;min-height:78px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.brand{font:700 31px Georgia,serif;color:#244a31;letter-spacing:-.02em}
+.links{display:flex;gap:19px;flex-wrap:wrap}.links a{font-size:15px;font-weight:650;color:#4a5a4e}
+main{max-width:var(--max);margin:auto;padding:44px 28px 82px;display:grid;grid-template-columns:300px minmax(0,1fr);gap:62px}
+aside{position:sticky;top:108px;align-self:start;background:linear-gradient(#f2f6ee,#fafbf7);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 28px rgba(37,60,43,.08)}
+.avatar{width:215px;height:215px;border-radius:18px;object-fit:cover;display:block;margin:0 0 20px;border:1px solid #dce5d9}
+aside h1{font:700 31px/1.18 Georgia,serif;color:#244a31;margin:0 0 8px}
+.role{color:var(--muted);margin:6px 0 18px}
+.meta{list-style:none;padding:0;margin:0}.meta li{padding:9px 0;border-top:1px solid #e1e8de}.meta li:first-child{border-top:0}
+.label{display:block;text-transform:uppercase;letter-spacing:.05em;font-size:12px;font-weight:700;color:var(--muted)}
+.cvbutton{display:inline-block;margin-top:12px;background:var(--green);color:#fff!important;padding:9px 14px;border-radius:9px;font-weight:700}.cvbutton:hover{text-decoration:none;background:#1f4d31}
+section{margin-bottom:52px;scroll-margin-top:96px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 30px;box-shadow:0 10px 28px rgba(37,60,43,.07)}
+h2{font:700 31px/1.25 Georgia,serif;color:#244a31;border-bottom:2px solid #d3dfd0;padding-bottom:9px;margin:0 0 18px}
+h3{color:#244a31;margin:28px 0 10px}
+.entry{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:0 0 16px}
+.entryhead{display:flex;justify-content:space-between;gap:18px;align-items:baseline}.entryhead span{white-space:nowrap;color:var(--muted);font-size:14px}
+.sub{color:var(--muted);margin-top:4px}
+.supervisor{display:inline-block;background:#eef5ea;border-left:4px solid var(--green2);padding:4px 8px;margin:2px 2px 2px 0;border-radius:5px;font-weight:700}
+.news,.services{list-style:none;padding:0}.news li,.services li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--green2);border-radius:12px;padding:12px 14px;margin:10px 0}
+.figure-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.figure-card{margin:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(37,60,43,.06)}
+.figure-card img{display:block;width:100%;height:auto;background:#edf2e9}
+.figure-card figcaption{padding:14px 16px 17px;font-size:15px;line-height:1.55;color:#3c4c40}
+.figure-card strong{color:#244a31}
+.pub li{margin-bottom:14px}
+.smallnote{color:var(--muted);font-size:15px;margin-top:-8px}
+.skills p{margin:9px 0}
 footer{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:13px}
-@media(max-width:960px){main{grid-template-columns:1fr;gap:30px}aside{position:static}.links{display:none}.avatar{width:155px;height:155px}.cards{grid-template-columns:1fr}}
+@media(max-width:980px){
+ main{grid-template-columns:1fr;gap:30px}.links{display:none}aside{position:static}.avatar{width:165px;height:165px}.figure-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+ body{font-size:16px}nav,main{padding-left:18px;padding-right:18px}.brand{font-size:27px}.hero{padding:22px 20px}.entryhead{display:block}.entryhead span{display:block;margin-top:3px}h2{font-size:27px}
+}
 </style>
 </head>
 <body>
-<header><nav><a class="brand" href="#top">Assa Nsabiyeze</a><div class="links"><a href="#research">Research</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#services">Academic Services</a><a href="#skills">Skills</a><a href="cv.html">CV</a></div></nav></header>
+<header>
+<nav>
+<a class="brand" href="#top">Assa Nsabiyeze</a>
+<div class="links">
+<a href="#research">Research</a>
+<a href="#figures">Figures</a>
+<a href="#education">Education</a>
+<a href="#publications">Publications</a>
+<a href="#projects">Projects</a>
+<a href="#teaching">Teaching</a>
+<a href="#services">Academic Services</a>
+<a href="#skills">Skills</a>
+<a href="cv.html">CV</a>
+</div>
+</nav>
+</header>
+
 <main id="top">
 <aside>
-<img class="avatar" src="https://avatars.githubusercontent.com/u/91697460?v=4" alt="Assa Nsabiyeze">
+<img class="avatar" src="assets/profile.jpg" alt="Assa Nsabiyeze">
 <h1>Assa Nsabiyeze</h1>
-<p><strong><a href="https://www.cau.edu.cn/" target="_blank">China Agricultural University</a></strong></p>
+<p><strong><a href="https://www.cau.edu.cn/" target="_blank" rel="noopener">China Agricultural University</a></strong></p>
 <p class="role">Doctoral Researcher in Agricultural Engineering<br>Precision Livestock Farming · AI · Sustainable Agriculture</p>
 <ul class="meta">
 <li><span class="label">Location</span>Beijing, China</li>
 <li><span class="label">Email</span><a href="mailto:assansabiyeze1@gmail.com">assansabiyeze1@gmail.com</a></li>
-<li><span class="label">ResearchGate</span><a href="https://www.researchgate.net/profile/Assa-Nsabiyeze" target="_blank">Research profile</a></li>
-<li><span class="label">Google Scholar</span><a href="https://scholar.google.com/scholar?q=%22Assa+Nsabiyeze%22" target="_blank">Scholar search</a></li>
-<li><span class="label">GitHub</span><a href="https://github.com/ASSA257" target="_blank">ASSA257</a></li>
+<li><span class="label">ResearchGate</span><a href="https://www.researchgate.net/profile/Assa-Nsabiyeze" target="_blank" rel="noopener">Research profile</a></li>
+<li><span class="label">Google Scholar</span><a href="https://scholar.google.com/scholar?q=%22Assa+Nsabiyeze%22" target="_blank" rel="noopener">Scholar search</a></li>
+<li><span class="label">GitHub</span><a href="https://github.com/ASSA257" target="_blank" rel="noopener">ASSA257</a></li>
 </ul>
 <a class="cvbutton" href="cv.html">View Academic CV</a>
 </aside>
+
 <article>
 <section class="hero">
-<p>I am <strong>Assa Nsabiyeze</strong>, an agricultural engineer and doctoral researcher specialising in <strong>precision livestock farming, multimodal sensing, artificial intelligence, animal behaviour and welfare, and sustainable livestock systems</strong>. My research integrates wearable and IoT sensing, machine learning and deep learning, causal-temporal modelling, life-cycle assessment (LCA), data envelopment analysis (DEA), input-output analysis, and environmental assessment.</p>
-<p>I am currently pursuing a <strong>PhD in Agricultural Engineering</strong> at <a href="https://www.cau.edu.cn/" target="_blank"><strong>China Agricultural University</strong></a> in Beijing under the supervision of <a href="https://faculty.cau.edu.cn/zxs_en/list.htm" target="_blank"><strong>Prof. Dr. Xiaoshuan Zhang</strong></a> and <a href="https://www.researchgate.net/profile/Mengjie-Zhang-7" target="_blank"><strong>Associate Prof. Dr. Mengjie Zhang</strong></a>. My doctoral work develops interpretable causal-temporal graph learning methods for multimodal sheep behaviour and welfare recognition.</p>
-<p>Before my PhD, I completed a <strong>Master of Engineering in Agricultural Engineering</strong> at China Agricultural University, <strong>Advanced Chinese Language Studies</strong> at <a href="https://www.bhu.edu.cn/" target="_blank"><strong>Bohai University</strong></a>, and a <strong>BSc (Honours) in Agronomy and Bio-Engineering</strong> at the <a href="https://www.ub.edu.bi/" target="_blank"><strong>University of Burundi</strong></a>, where I was supervised by <strong>Dr. Jean Ndimubandi</strong> and <strong>Prof. Dr. Sanctus Niragira</strong>.</p>
+<p>I am <strong>Assa Nsabiyeze</strong>, an agricultural engineer and doctoral researcher specialising in <strong>precision livestock farming (PLF), multimodal sensing, artificial intelligence, animal behaviour and welfare, and sustainable livestock systems</strong>. My research combines wearable and IoT sensing, machine learning and deep learning, causal-temporal modelling, life-cycle assessment (LCA), data envelopment analysis (DEA), input-output analysis, and environmental assessment to develop data-driven approaches for livestock monitoring and low-carbon agricultural systems.</p>
+
+<p>I am currently pursuing a <strong>PhD in Agricultural Engineering</strong> at <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener"><strong>China Agricultural University</strong></a> in Beijing, China, under the supervision of <a class="supervisor" href="https://faculty.cau.edu.cn/zxs_en/list.htm" target="_blank" rel="noopener">Prof. Dr. Xiaoshuan Zhang</a> and <a class="supervisor" href="https://www.researchgate.net/profile/Mengjie-Zhang-7" target="_blank" rel="noopener">Associate Prof. Dr. Mengjie Zhang</a>. My doctoral work develops interpretable causal-temporal graph learning methods for multimodal sheep behaviour and welfare recognition, integrating wearable sensors, physiological measurements, behavioural observations, and explainable AI.</p>
+
+<p>Before my PhD, I completed a <strong>Master of Engineering in Agricultural Engineering</strong> at <strong>China Agricultural University</strong> in 2024, where my research focused on the productivity and environmental performance of sheep farming using DEA, LCA, and predictive modelling. I also completed <strong>Advanced Chinese Language Studies</strong> at <a href="https://www.bhu.edu.cn/" target="_blank" rel="noopener"><strong>Bohai University</strong></a> in Jinzhou, China. I obtained my <strong>BSc (Honours) in Agronomy and Bio-Engineering</strong> from the <a href="https://www.ub.edu.bi/" target="_blank" rel="noopener"><strong>University of Burundi</strong></a> in Bujumbura, Burundi, under the supervision of <a class="supervisor" href="https://www.researchgate.net/profile/Ndimubandi-Jean" target="_blank" rel="noopener">Dr. Jean Ndimubandi</a> and <a class="supervisor" href="https://www.researchgate.net/profile/Sanctus-Niragira" target="_blank" rel="noopener">Prof. Dr. Sanctus Niragira</a>.</p>
 </section>
 
-<section id="research"><h2>Research Interests</h2>
-<ul><li>Precision livestock farming and digital agriculture</li><li>Wearable, IoT and multimodal sensing for livestock monitoring</li><li>Machine learning, deep learning and graph-based temporal modelling</li><li>Animal behaviour, welfare and physiological monitoring</li><li>Causal discovery, interpretable AI and multimodal data fusion</li><li>Life-cycle assessment, data envelopment analysis and environmental performance</li><li>Energy efficiency, greenhouse-gas mitigation and climate-smart agriculture</li><li>Applied general equilibrium and input-output modelling for sustainable agri-food systems</li></ul>
+<section id="research">
+<h2>Research Interests</h2>
+<ul>
+<li>Precision livestock farming and digital agriculture</li>
+<li>Wearable, IoT, and multimodal sensing for animal monitoring</li>
+<li>Machine learning, deep learning, and graph-based temporal modelling</li>
+<li>Animal behaviour, welfare, and physiological monitoring</li>
+<li>Causal discovery, interpretable AI, and multimodal data fusion</li>
+<li>Life-cycle assessment, data envelopment analysis, and environmental performance</li>
+<li>Agricultural energy efficiency, greenhouse-gas mitigation, and climate-smart agriculture</li>
+<li>Applied general equilibrium (AGE), input-output (I-O) analysis, and evidence synthesis for sustainable agri-food systems</li>
+</ul>
 </section>
 
-<section><h2>News</h2><ul class="news">
+<section id="news">
+<h2>News</h2>
+<ul class="news">
 <li><strong>2026:</strong> Delivered introductory teaching on precision livestock farming and smart livestock systems to visiting international students during two China Agricultural University summer schools.</li>
-<li><strong>2026.07:</strong> Completed Climate Compatible Growth courses in <em>Introduction to CLEWS</em> and <em>Applied Political Economy Analysis for Energy Modelling</em>.</li>
+<li><strong>2026.07:</strong> Completed the Climate Compatible Growth online courses <em>Introduction to CLEWS</em> and <em>Applied Political Economy Analysis for Energy Modelling</em>.</li>
 <li><strong>2026:</strong> Two manuscripts are ready for submission: <em>IC-TGCN: An Interpretable Causal Temporal Graph Convolutional Network for Multimodal Behavior and Welfare Recognition in Precision Sheep Farming</em> and <em>Multimodal Precision Livestock Farming: From Sensing and Data Fusion to Lightweight Intelligence</em>.</li>
-<li><strong>2025-2026:</strong> Completed peer-review service for three scholarly journals.</li>
-</ul></section>
-
-<section><h2>Selected Research Themes</h2><div class="cards">
-<div class="card"><strong>Multimodal sheep monitoring</strong><p>Wearable sensors, physiological measurements, behavioural observations and temporal AI for welfare and behaviour recognition.</p></div>
-<div class="card"><strong>Smart livestock systems</strong><p>Integrated sensing, computer vision, robotics and data-driven decision support for precision livestock farming.</p></div>
-<div class="card"><strong>Energy and carbon modelling</strong><p>Machine-learning models, LCA and efficiency analysis for energy use and carbon-footprint reduction in sheep farming.</p></div>
-<div class="card"><strong>Environmental-economic modelling</strong><p>AGE, input-output and evidence-synthesis methods for agricultural sustainability and low-carbon systems.</p></div>
-</div></section>
-
-<section id="education"><h2>Education</h2>
-<div class="entry"><div class="entryhead"><strong>PhD in Agricultural Engineering</strong><span>2024-Present</span></div><div class="sub">China Agricultural University, Beijing — Expected completion: 2028</div><p><strong>Supervisors:</strong> Prof. Dr. Xiaoshuan Zhang and Associate Prof. Dr. Mengjie Zhang.</p></div>
-<div class="entry"><div class="entryhead"><strong>Master of Engineering in Agricultural Engineering</strong><span>2021-2024</span></div><div class="sub">China Agricultural University — GPA 3.57/4.00</div><p><strong>Thesis:</strong> <em>Productivity and Environmental Performance of Sheep Farming: Data-driven Life Cycle Analysis and Optimization Strategy.</em></p></div>
-<div class="entry"><div class="entryhead"><strong>Advanced Chinese Language Studies (HSK 5)</strong><span>2019-2020</span></div><div class="sub">Bohai University, Jinzhou, China</div></div>
-<div class="entry"><div class="entryhead"><strong>BSc (Honours) in Agronomy and Bio-Engineering</strong><span>2016-2019</span></div><div class="sub">University of Burundi — Final result 78/100</div><p><strong>Supervisors:</strong> Dr. Jean Ndimubandi and Prof. Dr. Sanctus Niragira.</p></div>
+<li><strong>2026.04:</strong> Co-authored article on machine learning and life-cycle assessment for sustainable biofuel production published in <em>Biomass and Bioenergy</em>.</li>
+<li><strong>2025.12:</strong> First-authored article on predictive modelling for sheep-farming energy efficiency and carbon-footprint reduction published in <em>Journal of Cleaner Production</em>.</li>
+<li><strong>2025.09:</strong> First-authored review on precision livestock farming for climate-resilient livestock management published in <em>Journal of Cleaner Production</em>.</li>
+<li><strong>2024.06:</strong> Received the Best International Student Research Dissertation Award at China Agricultural University.</li>
+</ul>
 </section>
 
-<section id="publications"><h2>Publications</h2><ol class="pub">
-<li><strong>Nsabiyeze, A.</strong> et al. (2025). Harnessing predictive modeling for optimized energy efficiency and carbon footprint reduction in sheep farming. <em>Journal of Cleaner Production, 534</em>, 147104.</li>
-<li><strong>Nsabiyeze, A.</strong> et al. (2025). Precision livestock farming for climate-resilient livestock management: A review of real-time monitoring and decision support systems. <em>Journal of Cleaner Production, 524</em>, 146454.</li>
-<li><strong>Nsabiyeze, A.</strong> et al. (2024). Mitigating greenhouse gas emissions from sheep production systems in China: An integrated approach of data envelopment analysis and life cycle assessment. <em>Resources, Conservation & Recycling, 207</em>, 107695.</li>
-<li><strong>Nsabiyeze, A.</strong> et al. (2024). Tackling climate change in agriculture: A global evaluation of the effectiveness of carbon emission reduction policies. <em>Journal of Cleaner Production, 468</em>, 142973.</li>
-<li>Elshareef, H., <strong>Nsabiyeze, A.</strong> et al. (2026). Machine learning application and evaluation of CO2 emissions for sustainable biofuels production from pyrolysis of cotton stalks. <em>Biomass and Bioenergy, 207</em>, 108716.</li>
-<li>Shinali, T. S. et al., including <strong>Nsabiyeze, A.</strong> (2024). The valorization of wastes and byproducts from cruciferous vegetables. <em>Foods, 13</em>(8), 1163.</li>
-<li>Mperejekumana, P. et al., including <strong>Nsabiyeze, A.</strong> (2023). Assessing the capacity of the Water-Energy-Food Nexus in enhancing sustainable agriculture and food security in Burundi. <em>Sustainability, 15</em>(19), 14117.</li>
+<section id="figures">
+<h2>Selected Research Figures</h2>
+<p class="smallnote">Representative visual outputs from my work on precision livestock farming, wearable sensing, predictive modelling, and environmental assessment.</p>
+<div class="figure-grid">
+<figure class="figure-card">
+<img src="assets/figures/framework.jpg" alt="Framework for smart livestock farming">
+<figcaption><strong>Smart livestock farming framework.</strong> Integration of multimodal sensing, perception, interpretation, decision support, and sustainability-oriented management in precision livestock farming.</figcaption>
+</figure>
+<figure class="figure-card">
+<img src="assets/figures/field.jpg" alt="Wearable sensing field experiment">
+<figcaption><strong>Wearable sensing field experiment.</strong> Experimental setup illustrating sensor placement and multimodal data acquisition for sheep behaviour and welfare monitoring.</figcaption>
+</figure>
+<figure class="figure-card">
+<img src="assets/figures/predictive.jpg" alt="Predictive modelling of energy efficiency and carbon footprint">
+<figcaption><strong>Predictive modelling for sheep-farm sustainability.</strong> Machine-learning analysis of energy efficiency, farm variables, and carbon-footprint performance.</figcaption>
+</figure>
+<figure class="figure-card">
+<img src="assets/figures/carbon.jpg" alt="Carbon-emission evaluation in sheep production">
+<figcaption><strong>Carbon-emission and environmental assessment.</strong> Evaluation of emission sources, system boundaries, and mitigation or optimization outcomes in sheep production.</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="experience">
+<h2>Research and Professional Experience</h2>
+
+<div class="entry">
+<div class="entryhead"><strong>Doctoral Researcher — Precision Livestock Farming</strong><span>2024–Present</span></div>
+<div class="sub">China Agricultural University, Beijing, China</div>
+<ul>
+<li>Develop multimodal AI methods for sheep behaviour and welfare recognition using wearable and physiological sensing.</li>
+<li>Investigate causal discovery with PC and NOTEARS and interpretable temporal graph modelling.</li>
+<li>Work across experimental design, sensor-data preprocessing, model benchmarking, explainable AI, scientific writing, and publication development.</li>
+</ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>Research Intern</strong><span>Jul 2024–Present</span></div>
+<div class="sub">China Foundation of Rural Development, Beijing, China</div>
+<ul>
+<li>Contribute to data-driven analysis of agricultural practices, lower-carbon food-production strategies, and sustainable supply chains.</li>
+<li>Support work on wearable-sensing monitoring, carbon emissions in mutton-sheep farming, and food-security analysis.</li>
+</ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>Research Engineer — Precision Livestock Farming & Sustainability</strong><span>2022–2024</span></div>
+<div class="sub">China Agricultural University, Beijing, China</div>
+<ul>
+<li>Researched sheep-farming energy efficiency, greenhouse-gas mitigation, and environmental performance using data-driven modelling.</li>
+<li>Applied Random Forest, KNN, SVM, and other predictive models to agricultural and environmental prediction tasks.</li>
+<li>Contributed to frameworks combining AI, farm data, energy analysis, DEA, and LCA.</li>
+</ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>Research Assistant</strong><span>2023</span></div>
+<div class="sub">National Modern Technical System for Sheep Industry (CARS-38), Beijing, China</div>
+<ul>
+<li>Supported IoT integration, intelligent sensing, wearable-sensor calibration, and livestock data analysis.</li>
+</ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>International Student Office Assistant</strong><span>2021–2023</span></div>
+<div class="sub">China Agricultural University, Beijing, China</div>
+<ul>
+<li>Provided Chinese-English-French-Swahili interpretation and supported international student services, activities, and cross-cultural communication.</li>
+</ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>Translator, Voice Actor, Dubbing Assistant & Proofreader</strong><span>2022–2023</span></div>
+<div class="sub">StarTimes, Beijing, China</div>
+<ul>
+<li>Translated and proofread multilingual media content and supported script preparation, fact-checking, client communication, and cultural adaptation.</li>
+</ul>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+
+<div class="entry">
+<div class="entryhead"><strong>PhD in Agricultural Engineering</strong><span>2024–Present</span></div>
+<div class="sub">China Agricultural University, Beijing, China — Expected completion: 2028</div>
+<p><strong>Supervisors:</strong> <a class="supervisor" href="https://faculty.cau.edu.cn/zxs_en/list.htm" target="_blank" rel="noopener">Prof. Dr. Xiaoshuan Zhang</a> and <a class="supervisor" href="https://www.researchgate.net/profile/Mengjie-Zhang-7" target="_blank" rel="noopener">Associate Prof. Dr. Mengjie Zhang</a></p>
+<ul><li>Research: interpretable causal-temporal graph learning and multimodal sensing for sheep behaviour and welfare recognition.</li></ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>Master of Engineering in Agricultural Engineering</strong><span>2021–2024</span></div>
+<div class="sub">China Agricultural University, Beijing, China — GPA: 3.57/4.00</div>
+<ul><li>Thesis: <em>Productivity and Environmental Performance of Sheep Farming: Data-driven Life Cycle Analysis and Optimization Strategy.</em></li></ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>Advanced Chinese Language Studies (HSK 5)</strong><span>2019–2020</span></div>
+<div class="sub">Bohai University, Jinzhou, China</div>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>BSc (Honours) in Agronomy and Bio-Engineering</strong><span>2016–2019</span></div>
+<div class="sub">University of Burundi, Bujumbura, Burundi — Final result: 78/100</div>
+<p><strong>Supervisors:</strong> <a class="supervisor" href="https://www.researchgate.net/profile/Ndimubandi-Jean" target="_blank" rel="noopener">Dr. Jean Ndimubandi</a> and <a class="supervisor" href="https://www.researchgate.net/profile/Sanctus-Niragira" target="_blank" rel="noopener">Prof. Dr. Sanctus Niragira</a></p>
+</div>
+</section>
+
+<section id="publications">
+<h2>Publications</h2>
+<h3>Peer-reviewed journal articles</h3>
+<ol class="pub">
+<li><strong>Nsabiyeze, A.</strong>, Zhang, M., Li, J., Jiang, D., Zhao, Q., Yan, W., & Zhang, X. (2025). Harnessing predictive modeling for optimized energy efficiency and carbon footprint reduction in sheep farming. <em>Journal of Cleaner Production, 534</em>, 147104. <a href="https://doi.org/10.1016/j.jclepro.2025.147104" target="_blank" rel="noopener">DOI</a></li>
+<li><strong>Nsabiyeze, A.</strong>, Zhang, M., Li, J., Zhao, Q., & Zhang, X. (2025). Precision livestock farming for climate-resilient livestock management: A review of real-time monitoring and decision support systems. <em>Journal of Cleaner Production, 524</em>, 146454. <a href="https://doi.org/10.1016/j.jclepro.2025.146454" target="_blank" rel="noopener">DOI</a></li>
+<li><strong>Nsabiyeze, A.</strong>, Ma, R., Li, J., Zhao, Q., & Zhang, M. (2024). Mitigating greenhouse gas emissions from sheep production system in China: An integrated approach of data envelopment analysis and life cycle assessment. <em>Resources, Conservation & Recycling, 207</em>, 107695. <a href="https://doi.org/10.1016/j.resconrec.2024.107695" target="_blank" rel="noopener">DOI</a></li>
+<li><strong>Nsabiyeze, A.</strong>, Ma, R., Li, J., Luo, H., Zhao, Q., Tomka, J., & Zhang, M. (2024). Tackling climate change in agriculture: A global evaluation of the effectiveness of carbon emission reduction policies. <em>Journal of Cleaner Production, 468</em>, 142973. <a href="https://doi.org/10.1016/j.jclepro.2024.142973" target="_blank" rel="noopener">DOI</a></li>
+<li>Shinali, T. S., Zhang, Y., Altaf, M., <strong>Nsabiyeze, A.</strong>, Han, Z., Shi, S., & Shang, N. (2024). The valorization of wastes and byproducts from cruciferous vegetables: A review on the potential utilization of cabbage, cauliflower, and broccoli byproducts. <em>Foods, 13</em>(8), 1163. <a href="https://doi.org/10.3390/foods13081163" target="_blank" rel="noopener">DOI</a></li>
+<li>Mperejekumana, P., Shen, L., Zhong, S., Muhirwa, F., <strong>Nsabiyeze, A.</strong>, Nsigayehe, J. M. V., & Nyirarwasa, A. (2023). Assessing the capacity of the Water–Energy–Food Nexus in enhancing sustainable agriculture and food security in Burundi. <em>Sustainability, 15</em>(19), 14117. <a href="https://doi.org/10.3390/su151914117" target="_blank" rel="noopener">DOI</a></li>
+<li>Elshareef, H., <strong>Nsabiyeze, A.</strong>, Tursunov, O., Ren, S., Karimov, I., Mperejekumana, P., Dong, R., & Zhou, Y. (2026). Machine learning application and evaluation of CO<sub>2</sub> emissions for sustainable biofuels production from pyrolysis of cotton stalks. <em>Biomass and Bioenergy, 207</em>, 108716. <a href="https://doi.org/10.1016/j.biombioe.2025.108716" target="_blank" rel="noopener">DOI</a></li>
 </ol>
-<h3>Manuscripts ready for submission</h3><ul><li><strong>IC-TGCN:</strong> An Interpretable Causal Temporal Graph Convolutional Network for Multimodal Behavior and Welfare Recognition in Precision Sheep Farming.</li><li><strong>Multimodal Precision Livestock Farming:</strong> From Sensing and Data Fusion to Lightweight Intelligence.</li></ul>
+
+<h3>Manuscripts ready for submission</h3>
+<ul>
+<li><strong>IC-TGCN:</strong> An Interpretable Causal Temporal Graph Convolutional Network for Multimodal Behavior and Welfare Recognition in Precision Sheep Farming.</li>
+<li><strong>Multimodal Precision Livestock Farming:</strong> From Sensing and Data Fusion to Lightweight Intelligence.</li>
+</ul>
 </section>
 
-<section id="teaching"><h2>Teaching and International Academic Engagement</h2>
-<div class="entry"><strong>2026 Summer School Program on Intelligent Agricultural Machinery and Smart Agriculture</strong><p>Delivered an introduction to precision livestock farming, sensing technologies, wearable and physiological monitoring, computer vision, robotics and carbon-emission assessment for visiting international students.</p></div>
-<div class="entry"><strong>2026 Artificial Intelligence-Empowered Animal Welfare International Summer School</strong><p>Introduced AI-enabled precision livestock farming for animal behaviour, vitality, health and welfare monitoring, including wearable and rumen sensing, computer-vision pipelines and intelligent robots.</p></div>
+<section id="projects">
+<h2>Funded and Collaborative Research Projects</h2>
+<div class="entry"><div class="entryhead"><strong>Dynamic modelling of live fish life evolution under waterless and low-temperature stress using multi-scale flexible bio-impedance detection</strong><span>2023–2024</span></div><div class="sub">NSFC — Project Assistant</div></div>
+<div class="entry"><div class="entryhead"><strong>Advanced sensing technology and dynamics modelling for food value chains</strong><span>2022–2023</span></div><div class="sub">National Key R&D Plan; collaboration with University of Iceland — Project Assistant</div></div>
+<div class="entry"><div class="entryhead"><strong>Towards Energy Efficiency in AgriFood Cold Chain Logistics in China</strong><span>2022–2023</span></div><div class="sub">EU SWITCH-Asia — Project Assistant</div></div>
+<div class="entry"><div class="entryhead"><strong>Multimodal intelligent sensor monitoring and tracing for waterless fish cold chain</strong><span>2022–2023</span></div><div class="sub">Hainan Province; collaboration with University of Dubrovnik, Croatia — Project Assistant</div></div>
+<div class="entry"><div class="entryhead"><strong>Flexible and extensible wearable intelligent monitoring technology for farm animal safety production</strong><span>2021–2022</span></div><div class="sub">Wearable sensing, IoT integration, and sensor calibration — Research Contributor</div></div>
 </section>
 
-<section id="services"><h2>Academic Services</h2><ul class="services">
+<section id="teaching">
+<h2>Teaching and International Academic Engagement</h2>
+<div class="entry">
+<div class="entryhead"><strong>2026 Summer School Program on Intelligent Agricultural Machinery and Smart Agriculture</strong><span>2026</span></div>
+<div class="sub">China Agricultural University — Teaching contributor / presenter for visiting international students</div>
+<ul>
+<li>Delivered an introduction to precision livestock farming (PLF) and smart livestock systems.</li>
+<li>Introduced sensing technologies, wearable and physiological monitoring, computer vision, robotics, and carbon-emission assessment in livestock production.</li>
+<li>Used sheep-focused case studies to connect multimodal sensing, AI-based behaviour recognition, welfare monitoring, and sustainability assessment.</li>
+</ul>
+</div>
+
+<div class="entry">
+<div class="entryhead"><strong>2026 Artificial Intelligence-Empowered Animal Welfare International Summer School</strong><span>2026</span></div>
+<div class="sub">China Agricultural University — Teaching contributor / presenter for visiting international students</div>
+<ul>
+<li>Introduced AI-enabled precision livestock farming for animal behaviour, vitality, health, and welfare monitoring.</li>
+<li>Covered wearable and rumen sensing, computer-vision pipelines, intelligent robots, multimodal monitoring, and low-carbon livestock management.</li>
+</ul>
+</div>
+</section>
+
+<section id="conferences">
+<h2>Conferences and Academic Engagement</h2>
+<ul>
+<li><strong>2024:</strong> World AgriFood Innovation (WAFI) Conference, Beijing — Speaker.</li>
+<li><strong>2023:</strong> World AgriFood Innovation (WAFI) Conference, Beijing — Speaker.</li>
+<li><strong>2022:</strong> Green Ecological Grain Storage Technology Training Workshop for ACD Countries, Beijing — Speaker.</li>
+<li><strong>2022:</strong> World Youth Development Forum, Beijing — Participant.</li>
+</ul>
+</section>
+
+<section id="training">
+<h2>Professional Training and Certificates</h2>
+<div class="entry"><div class="entryhead"><strong>Applied Political Economy Analysis for Energy Modelling</strong><span>28 Jul 2026</span></div><div class="sub">Climate Compatible Growth — Online course, completed</div></div>
+<div class="entry"><div class="entryhead"><strong>Introduction to CLEWS</strong><span>28 Jul 2026</span></div><div class="sub">Climate Compatible Growth — Online course, completed</div></div>
+<div class="entry"><div class="entryhead"><strong>Summer International Intelligent Agricultural Machinery and Equipment Training Program</strong><span>2024</span></div><div class="sub">China Agricultural University — Trainee</div></div>
+</section>
+
+<section id="services">
+<h2>Academic Services</h2>
+<ul class="services">
 <li><strong>Peer-reviewed Journal Article Reviewer — International Journal of Biological Macromolecules</strong><br>Completed 1 review in November 2025.</li>
 <li><strong>Peer-reviewed Journal Article Reviewer — Annals of Tourism Research Empirical Insights</strong><br>Completed 2 reviews between January and April 2026.</li>
 <li><strong>Peer-reviewed Journal Article Reviewer — Smart Agricultural Technology</strong><br>Completed 1 review in March 2026.</li>
-</ul></section>
-
-<section id="awards"><h2>Awards, Training and Academic Engagement</h2>
-<ul><li>Best International Student Research Dissertation Award, China Agricultural University (2024)</li><li>Graduate Research Scholarship, China Scholarship Council / China Agricultural University (2021)</li><li>Confucius Institute Scholarship, Bohai University (2019)</li><li>World AgriFood Innovation Conference — Speaker (2024; 2023)</li><li>Green Ecological Grain Storage Technology Training Workshop for ACD Countries — Speaker (2022)</li><li>Applied Political Economy Analysis for Energy Modelling, Climate Compatible Growth (2026)</li><li>Introduction to CLEWS, Climate Compatible Growth (2026)</li></ul>
+</ul>
 </section>
 
-<section id="skills"><h2>Skills</h2>
-<p><strong>Programming and data analysis:</strong> Python, MATLAB, R, SQL; NumPy, Pandas, SciPy, Matplotlib, scikit-learn and OpenCV.</p>
-<p><strong>Machine learning and deep learning:</strong> Random Forest, KNN, SVM, SVR, gradient boosting, XGBoost, ANN, LSTM, CNN-LSTM and graph-based temporal modelling.</p>
-<p><strong>Causal and interpretable modelling:</strong> PC algorithm, NOTEARS, causal-temporal modelling and explainable-AI workflows.</p>
-<p><strong>Modelling:</strong> Applied general equilibrium (AGE) modelling, life cycle assessment (LCA), input-output (I-O) analysis, data envelopment analysis (DEA), and meta-analysis.</p>
-<p><strong>Software:</strong> SimaPro, ArcGIS Desktop/Pro, Origin, GraphPad Prism, PAST3, MS Visio, Adobe Creative Suite, EdrawMax, GitHub and Microsoft Office.</p>
-<p><strong>Languages:</strong> Kirundi (native); English and French (professional proficiency); Swahili (fluent); Chinese (HSK 5 / working proficiency).</p>
+<section id="awards">
+<h2>Awards and Scholarships</h2>
+<ul>
+<li><strong>2024:</strong> Best International Student Research Dissertation Award, China Agricultural University.</li>
+<li><strong>2021:</strong> Graduate Research Scholarship, China Scholarship Council / China Agricultural University.</li>
+<li><strong>2019:</strong> Confucius Institute Scholarship, Bohai University.</li>
+</ul>
 </section>
 
-<footer>Assa Nsabiyeze | Academic Website · Last updated September 22, 2026 · Hosted with GitHub Pages</footer>
+<section id="skills" class="skills">
+<h2>Skills</h2>
+<p><strong>Programming & data analysis:</strong> Python, MATLAB, R, SQL; NumPy, Pandas, SciPy, Matplotlib, scikit-learn, and OpenCV.</p>
+<p><strong>Machine learning & deep learning:</strong> Random Forest, KNN, SVM, SVR, gradient boosting, XGBoost, ANN, LSTM, CNN-LSTM, and graph-based temporal modelling.</p>
+<p><strong>Causal & interpretable modelling:</strong> PC algorithm, NOTEARS, causal-temporal modelling, and explainable-AI workflows.</p>
+<p><strong>Modelling & evidence synthesis:</strong> Applied general equilibrium (AGE) modelling, life cycle assessment (LCA), input-output (I-O) analysis, data envelopment analysis (DEA), and meta-analysis.</p>
+<p><strong>Precision-livestock & environmental analytics:</strong> Multimodal sensing, IoT, wearable sensors, animal behaviour and welfare analysis, energy-efficiency modelling, greenhouse-gas assessment, and carbon-footprint analysis.</p>
+<p><strong>Scientific & modelling software:</strong> SimaPro, ArcGIS Desktop/Pro, Origin, GraphPad Prism, PAST3, MS Visio, Adobe Creative Suite, EdrawMax, GitHub, and Microsoft Office.</p>
+</section>
+
+<section id="languages">
+<h2>Languages</h2>
+<ul>
+<li>Kirundi — Native</li>
+<li>English — Professional proficiency</li>
+<li>French — Professional proficiency</li>
+<li>Swahili — Fluent</li>
+<li>Chinese — HSK 5 / working proficiency</li>
+</ul>
+</section>
+
+<footer>Assa Nsabiyeze | Academic Website · Last updated: September 22, 2026 · Hosted with GitHub Pages.</footer>
 </article>
 </main>
 </body>
